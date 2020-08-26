@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/daywalker/kicad/retropilot_f405_ecu/retropilot_stm32f405_ecu.sch</source>
-    <date>Mo 20 Jul 2020 04:41:23 CEST</date>
+    <source>/home/daywalker/kicad/retropilot_f405_ecu_v2/retropilot_stm32f405_ecu.sch</source>
+    <date>Mi 26 Aug 2020 02:21:22 CEST</date>
     <tool>Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
         <company/>
-        <rev/>
-        <date/>
+        <rev>2</rev>
+        <date>2020-08-25</date>
         <source>retropilot_stm32f405_ecu.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -125,7 +125,7 @@
     </comp>
     <comp ref="J_OBD1">
       <value>PANDA CONNECTOR</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical</footprint>
+      <footprint>my_custom_parts:C-OBD-II-16M-E-N-12V</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector" part="Conn_01x16_Female" description="Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -133,7 +133,7 @@
     </comp>
     <comp ref="J_PWR1">
       <value>Conn_01x02_Male</value>
-      <footprint>Connector_Molex:Molex_Mini-Fit_Jr_5569-02A1_2x01_P4.20mm_Horizontal</footprint>
+      <footprint>Connector_Molex:Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -181,7 +181,7 @@
     </comp>
     <comp ref="SW_RES1">
       <value>SW_Push</value>
-      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ</footprint>
       <datasheet>TS-1187A-B-A-B</datasheet>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -221,7 +221,7 @@
     </comp>
     <comp ref="SW_BOOT1">
       <value>SW_Push</value>
-      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -317,9 +317,9 @@
     </comp>
     <comp ref="J_SERIAL_DEBUG1">
       <value>Conn_01x02_Female</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal</footprint>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connector" part="Conn_01x02_Female" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="Connector" part="Conn_01x03_Female" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F1DDD49</tstamp>
     </comp>
@@ -367,23 +367,23 @@
       <value>Conn_02x03_Counter_Clockwise</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F401F81</tstamp>
     </comp>
     <comp ref="J_CAN1_H1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F44EF25</tstamp>
     </comp>
     <comp ref="J_CAN1_L1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F44EF32</tstamp>
     </comp>
@@ -404,18 +404,18 @@
       <tstamp>5F483CF7</tstamp>
     </comp>
     <comp ref="J_CAN2_H1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F4A2CD3</tstamp>
     </comp>
     <comp ref="J_CAN2_L1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F4A2CE0</tstamp>
     </comp>
@@ -524,18 +524,18 @@
       <tstamp>5F582E97</tstamp>
     </comp>
     <comp ref="J_MCP2_H1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F5B3BDA</tstamp>
     </comp>
     <comp ref="J_MCP2_L1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F5B3BE7</tstamp>
     </comp>
@@ -572,18 +572,18 @@
       <tstamp>5F4BCB03</tstamp>
     </comp>
     <comp ref="J_CAN3_L1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F4BCAF4</tstamp>
     </comp>
     <comp ref="J_CAN3_H1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F4BCAE7</tstamp>
     </comp>
@@ -883,10 +883,10 @@
       <tstamp>5FC6D394</tstamp>
     </comp>
     <comp ref="J_MCP1_H1">
-      <value>Conn_02x03_Counter_Clockwise</value>
+      <value>Conn_02x03_Odd_Even</value>
       <footprint>Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Switch" part="SW_DIP_x03" description="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F3EFF63</tstamp>
     </comp>
@@ -1160,6 +1160,25 @@
         <pin num="12" name="~RST" type="openCol"/>
         <pin num="13" name="VCP_RX" type="output"/>
         <pin num="14" name="VCP_TX" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x03_Odd_Even">
+      <description>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="CP">
@@ -1468,25 +1487,6 @@
         <pin num="3" name="OUT" type="power_out"/>
       </pins>
     </libpart>
-    <libpart lib="Switch" part="SW_DIP_x03">
-      <description>3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>SW?DIP?x3*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">SW</field>
-        <field name="Value">SW_DIP_x03</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-        <pin num="3" name="~" type="passive"/>
-        <pin num="4" name="~" type="passive"/>
-        <pin num="5" name="~" type="passive"/>
-        <pin num="6" name="~" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Switch" part="SW_Push">
       <description>Push button switch, generic, two pins</description>
       <docs>~</docs>
@@ -1506,6 +1506,9 @@
     </library>
     <library logical="Connector">
       <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
     </library>
     <library logical="Device">
       <uri>/usr/share/kicad/library/Device.lib</uri>
@@ -1533,662 +1536,663 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="+5V">
-      <node ref="C_L298_5V1" pin="1"/>
-      <node ref="C_MCP2" pin="1"/>
-      <node ref="U_NCV7805" pin="3"/>
-      <node ref="U_UA78M33Q1" pin="1"/>
-      <node ref="C_VOUT1" pin="1"/>
-      <node ref="J_INOUT2" pin="2"/>
-      <node ref="U6002" pin="8"/>
-      <node ref="C_MCP1" pin="1"/>
-      <node ref="L298P_DRIVER1" pin="12"/>
-      <node ref="L298P_DRIVER2" pin="12"/>
-      <node ref="U_TJA1040_1" pin="3"/>
-      <node ref="U_TJA1040_2" pin="3"/>
-      <node ref="C_6002" pin="1"/>
-      <node ref="J_VSS_SENSOR1" pin="1"/>
-      <node ref="C_VIN33_1" pin="1"/>
-      <node ref="C_L298_5V2" pin="1"/>
-    </net>
-    <net code="2" name="+3V3">
-      <node ref="R_RES1" pin="2"/>
-      <node ref="FB_VDDA1" pin="2"/>
-      <node ref="C_VIN33_2" pin="1"/>
-      <node ref="D_GREEN1" pin="2"/>
-      <node ref="D_RED1" pin="2"/>
-      <node ref="U_UA78M33Q1" pin="3"/>
-      <node ref="D_BLUE1" pin="2"/>
-      <node ref="SW_BOOT1" pin="1"/>
-      <node ref="C_IN_0" pin="1"/>
-      <node ref="U1" pin="64"/>
-      <node ref="U1" pin="48"/>
-      <node ref="U1" pin="32"/>
-      <node ref="U1" pin="1"/>
-      <node ref="J_ACTUATOR2" pin="5"/>
-      <node ref="J_STDC1" pin="3"/>
-      <node ref="C_IN_1" pin="1"/>
-      <node ref="C_IN_2" pin="1"/>
-      <node ref="C_IN_4" pin="1"/>
-      <node ref="J_I2C_DISP1" pin="2"/>
-      <node ref="J_ACTUATOR1" pin="5"/>
-      <node ref="U1" pin="19"/>
-      <node ref="C_IN_5" pin="1"/>
-      <node ref="C_IN_3" pin="1"/>
-    </net>
-    <net code="3" name="Net-(J_STDC1-Pad9)">
-      <node ref="J_STDC1" pin="9"/>
-    </net>
-    <net code="4" name="Net-(J_STDC1-Pad10)">
-      <node ref="J_STDC1" pin="10"/>
-    </net>
-    <net code="5" name="GND">
-      <node ref="R_6002_4" pin="1"/>
-      <node ref="D2_5" pin="2"/>
-      <node ref="C_L298_5V2" pin="2"/>
-      <node ref="C_HSE_I1" pin="2"/>
-      <node ref="C_HSE_O1" pin="2"/>
-      <node ref="C_L298_12V2" pin="2"/>
-      <node ref="H4" pin="1"/>
-      <node ref="H3" pin="1"/>
-      <node ref="R_6002_1" pin="1"/>
-      <node ref="R_6002_5" pin="1"/>
-      <node ref="U6002" pin="4"/>
-      <node ref="H2" pin="1"/>
-      <node ref="R_6002_3" pin="1"/>
-      <node ref="C_6002" pin="2"/>
-      <node ref="L298P_DRIVER2" pin="11"/>
-      <node ref="L298P_DRIVER2" pin="2"/>
-      <node ref="L298P_DRIVER2" pin="20"/>
-      <node ref="U_NCV7805" pin="2"/>
-      <node ref="U_UA78M33Q1" pin="2"/>
-      <node ref="L298P_DRIVER2" pin="10"/>
-      <node ref="L298P_DRIVER2" pin="19"/>
-      <node ref="R_AC_POTI2" pin="1"/>
-      <node ref="L298P_DRIVER2" pin="1"/>
-      <node ref="U_TJA1040_1" pin="2"/>
-      <node ref="U_TJA1040_2" pin="2"/>
-      <node ref="H1" pin="1"/>
-      <node ref="C_IN_1" pin="2"/>
-      <node ref="C_IN_3" pin="2"/>
-      <node ref="U1" pin="18"/>
-      <node ref="U1" pin="63"/>
-      <node ref="U1" pin="12"/>
-      <node ref="C_IN_2" pin="2"/>
-      <node ref="D5" pin="2"/>
-      <node ref="D6" pin="2"/>
-      <node ref="D7" pin="2"/>
-      <node ref="D8" pin="2"/>
-      <node ref="R_AC_POTI1" pin="1"/>
-      <node ref="C_VOUT1" pin="2"/>
-      <node ref="R_DIV21" pin="2"/>
-      <node ref="R_DIV11" pin="2"/>
-      <node ref="J_INOUT1" pin="8"/>
-      <node ref="J_INOUT2" pin="3"/>
-      <node ref="J_I2C_DISP1" pin="1"/>
-      <node ref="C_IN_4" pin="2"/>
-      <node ref="J_CAN_1" pin="2"/>
-      <node ref="R_BOOT_0" pin="1"/>
-      <node ref="J_CAN_2" pin="2"/>
-      <node ref="R_D_RED1" pin="1"/>
-      <node ref="J_CAN_3" pin="2"/>
-      <node ref="C_VIN33_1" pin="2"/>
-      <node ref="C_VIN33_2" pin="2"/>
-      <node ref="J_PWR1" pin="2"/>
-      <node ref="J_OBD1" pin="4"/>
-      <node ref="SW_RES1" pin="2"/>
-      <node ref="L298P_DRIVER1" pin="20"/>
-      <node ref="C_MCP1" pin="2"/>
+    <net code="1" name="GND">
+      <node ref="C_IN_7" pin="2"/>
+      <node ref="R_RS_MCP1" pin="2"/>
+      <node ref="C_IN_6" pin="2"/>
+      <node ref="R_RS_MCP2" pin="2"/>
       <node ref="C_VIN1" pin="2"/>
+      <node ref="C_MCP1" pin="2"/>
       <node ref="L298P_DRIVER1" pin="19"/>
       <node ref="L298P_DRIVER1" pin="2"/>
-      <node ref="C_RES1" pin="2"/>
-      <node ref="R_RS_MCP1" pin="2"/>
+      <node ref="L298P_DRIVER1" pin="20"/>
+      <node ref="R_BOOT_0" pin="1"/>
+      <node ref="C_MCP2" pin="2"/>
+      <node ref="R_BOOT_1" pin="1"/>
       <node ref="L298P_DRIVER1" pin="1"/>
       <node ref="L298P_DRIVER1" pin="10"/>
       <node ref="L298P_DRIVER1" pin="11"/>
-      <node ref="R_BOOT_1" pin="1"/>
-      <node ref="J_VSS_SENSOR1" pin="2"/>
-      <node ref="C_IN_6" pin="2"/>
-      <node ref="C_IN_7" pin="2"/>
-      <node ref="C_L298_5V1" pin="2"/>
-      <node ref="J_STDC1" pin="7"/>
-      <node ref="C_IN_5" pin="2"/>
-      <node ref="C_MCP2" pin="2"/>
-      <node ref="D2_7" pin="2"/>
-      <node ref="D2_8" pin="2"/>
-      <node ref="R_RS_MCP2" pin="2"/>
-      <node ref="D2_6" pin="2"/>
+      <node ref="R_AC_POTI2" pin="1"/>
+      <node ref="R_D_BL1" pin="1"/>
+      <node ref="C_IN_3" pin="2"/>
+      <node ref="C_IN_2" pin="2"/>
+      <node ref="C_L298_12V2" pin="2"/>
+      <node ref="C_IN_4" pin="2"/>
+      <node ref="C_L298_5V2" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="U1" pin="12"/>
+      <node ref="U1" pin="63"/>
+      <node ref="U1" pin="18"/>
+      <node ref="D6" pin="2"/>
+      <node ref="R_D_GR1" pin="1"/>
+      <node ref="C_IN_1" pin="2"/>
+      <node ref="C_VOUT1" pin="2"/>
+      <node ref="R_DIV21" pin="2"/>
       <node ref="C_VCAP1" pin="2"/>
+      <node ref="D7" pin="2"/>
+      <node ref="D8" pin="2"/>
+      <node ref="R_AC_POTI1" pin="1"/>
+      <node ref="SW_RES1" pin="2"/>
+      <node ref="C_RES1" pin="2"/>
+      <node ref="L298P_DRIVER2" pin="20"/>
+      <node ref="L298P_DRIVER2" pin="2"/>
+      <node ref="L298P_DRIVER2" pin="19"/>
+      <node ref="D2_5" pin="2"/>
+      <node ref="D2_8" pin="2"/>
+      <node ref="J_INOUT1" pin="8"/>
+      <node ref="U_TJA1040_1" pin="2"/>
       <node ref="C_L298_12V1" pin="2"/>
-      <node ref="C_IN_0" pin="2"/>
-      <node ref="J_STDC1" pin="5"/>
+      <node ref="U6002" pin="4"/>
+      <node ref="J_OBD1" pin="4"/>
+      <node ref="J_I2C_DISP1" pin="1"/>
+      <node ref="R_6002_4" pin="1"/>
+      <node ref="U_NCV7805" pin="2"/>
+      <node ref="U_UA78M33Q1" pin="2"/>
+      <node ref="L298P_DRIVER2" pin="1"/>
       <node ref="J_STDC1" pin="11"/>
+      <node ref="L298P_DRIVER2" pin="10"/>
+      <node ref="L298P_DRIVER2" pin="11"/>
+      <node ref="D2_7" pin="2"/>
+      <node ref="J_STDC1" pin="5"/>
+      <node ref="D2_6" pin="2"/>
+      <node ref="J_STDC1" pin="7"/>
+      <node ref="C_HSE_I1" pin="2"/>
+      <node ref="C_HSE_O1" pin="2"/>
+      <node ref="C_L298_5V1" pin="2"/>
       <node ref="C_VCAP2" pin="2"/>
+      <node ref="R_6002_1" pin="1"/>
+      <node ref="R_DIV11" pin="2"/>
+      <node ref="R_6002_5" pin="1"/>
+      <node ref="C_IN_0" pin="2"/>
+      <node ref="J_CAN_1" pin="2"/>
+      <node ref="J_SERIAL_DEBUG1" pin="3"/>
+      <node ref="R_D_RED1" pin="1"/>
+      <node ref="R_6002_3" pin="1"/>
+      <node ref="C_6002" pin="2"/>
+      <node ref="J_INOUT2" pin="3"/>
+      <node ref="J_VSS_SENSOR1" pin="2"/>
+      <node ref="J_PWR1" pin="1"/>
+      <node ref="U_TJA1040_2" pin="2"/>
+      <node ref="C_VIN33_1" pin="2"/>
+      <node ref="C_VIN33_2" pin="2"/>
+      <node ref="H2" pin="1"/>
+      <node ref="J_CAN_3" pin="2"/>
+      <node ref="J_CAN_2" pin="2"/>
+      <node ref="H4" pin="1"/>
+      <node ref="H3" pin="1"/>
+      <node ref="H1" pin="1"/>
+      <node ref="C_IN_5" pin="2"/>
     </net>
-    <net code="6" name="SWCLK">
-      <node ref="J_STDC1" pin="6"/>
-      <node ref="U1" pin="49"/>
-    </net>
-    <net code="7" name="SWDIO">
-      <node ref="U1" pin="46"/>
-      <node ref="J_STDC1" pin="4"/>
-    </net>
-    <net code="8" name="Net-(J_STDC1-Pad2)">
-      <node ref="J_STDC1" pin="2"/>
-    </net>
-    <net code="9" name="TX_STDC14">
+    <net code="2" name="TX_STDC14">
       <node ref="J_STDC1" pin="14"/>
-      <node ref="J_SERIAL_DEBUG1" pin="2"/>
       <node ref="U1" pin="42"/>
+      <node ref="J_SERIAL_DEBUG1" pin="2"/>
     </net>
-    <net code="10" name="RX_STDC14">
-      <node ref="U1" pin="43"/>
+    <net code="3" name="RX_STDC14">
       <node ref="J_SERIAL_DEBUG1" pin="1"/>
+      <node ref="U1" pin="43"/>
       <node ref="J_STDC1" pin="13"/>
     </net>
-    <net code="11" name="NRST">
+    <net code="4" name="NRST">
+      <node ref="SW_RES1" pin="1"/>
+      <node ref="C_RES1" pin="1"/>
       <node ref="U1" pin="7"/>
       <node ref="J_STDC1" pin="12"/>
-      <node ref="SW_RES1" pin="1"/>
       <node ref="R_RES1" pin="1"/>
-      <node ref="C_RES1" pin="1"/>
     </net>
-    <net code="12" name="Net-(J_STDC1-Pad1)">
+    <net code="5" name="Net-(J_STDC1-Pad10)">
+      <node ref="J_STDC1" pin="10"/>
+    </net>
+    <net code="6" name="Net-(J_STDC1-Pad1)">
       <node ref="J_STDC1" pin="1"/>
     </net>
-    <net code="13" name="OBD_12">
-      <node ref="J_MCP2_H1" pin="3"/>
-      <node ref="J_MCP1_H1" pin="3"/>
-      <node ref="J_CAN3_H1" pin="3"/>
-      <node ref="J_CAN2_H1" pin="3"/>
-      <node ref="J_OBD1" pin="12"/>
-      <node ref="J_CAN1_H1" pin="3"/>
+    <net code="7" name="Net-(J_STDC1-Pad2)">
+      <node ref="J_STDC1" pin="2"/>
     </net>
-    <net code="14" name="OBD_3">
-      <node ref="J_CAN2_H1" pin="2"/>
-      <node ref="J_MCP2_H1" pin="2"/>
-      <node ref="J_CAN1_H1" pin="2"/>
-      <node ref="J_MCP1_H1" pin="2"/>
-      <node ref="J_OBD1" pin="3"/>
-      <node ref="J_CAN3_H1" pin="2"/>
+    <net code="8" name="+3V3">
+      <node ref="J_ACTUATOR1" pin="5"/>
+      <node ref="U1" pin="1"/>
+      <node ref="J_STDC1" pin="3"/>
+      <node ref="FB_VDDA1" pin="2"/>
+      <node ref="R_RES1" pin="2"/>
+      <node ref="SW_BOOT1" pin="1"/>
+      <node ref="C_VIN33_2" pin="1"/>
+      <node ref="J_ACTUATOR2" pin="5"/>
+      <node ref="C_IN_3" pin="1"/>
+      <node ref="C_IN_4" pin="1"/>
+      <node ref="C_IN_0" pin="1"/>
+      <node ref="C_IN_2" pin="1"/>
+      <node ref="C_IN_1" pin="1"/>
+      <node ref="C_IN_5" pin="1"/>
+      <node ref="U_UA78M33Q1" pin="3"/>
+      <node ref="J_I2C_DISP1" pin="2"/>
+      <node ref="D_RED1" pin="2"/>
+      <node ref="U1" pin="19"/>
+      <node ref="U1" pin="32"/>
+      <node ref="U1" pin="48"/>
+      <node ref="U1" pin="64"/>
     </net>
-    <net code="15" name="OBD_6">
-      <node ref="J_MCP2_H1" pin="1"/>
-      <node ref="J_CAN1_H1" pin="1"/>
-      <node ref="J_CAN2_H1" pin="1"/>
-      <node ref="J_CAN3_H1" pin="1"/>
-      <node ref="J_MCP1_H1" pin="1"/>
-      <node ref="J_OBD1" pin="6"/>
+    <net code="9" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
     </net>
-    <net code="16" name="CAN3_OUT_H">
-      <node ref="J_CAN3_H1" pin="6"/>
-      <node ref="R_CAN3" pin="1"/>
-      <node ref="J_CAN3_H1" pin="4"/>
-      <node ref="J_CAN3_H1" pin="5"/>
-      <node ref="J_CAN_3" pin="4"/>
+    <net code="10" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
     </net>
-    <net code="17" name="OBD_13">
-      <node ref="J_OBD1" pin="13"/>
-      <node ref="J_CAN1_L1" pin="3"/>
-      <node ref="J_CAN2_L1" pin="3"/>
-      <node ref="J_MCP2_L1" pin="3"/>
-      <node ref="J_CAN3_L1" pin="3"/>
-      <node ref="J_MCP1_L1" pin="3"/>
+    <net code="11" name="Net-(J_STDC1-Pad9)">
+      <node ref="J_STDC1" pin="9"/>
     </net>
-    <net code="18" name="OBD_11">
-      <node ref="J_CAN2_L1" pin="2"/>
-      <node ref="J_CAN1_L1" pin="2"/>
-      <node ref="J_MCP2_L1" pin="2"/>
-      <node ref="J_MCP1_L1" pin="2"/>
-      <node ref="J_CAN3_L1" pin="2"/>
-      <node ref="J_OBD1" pin="11"/>
+    <net code="12" name="SWO">
+      <node ref="U1" pin="55"/>
+      <node ref="J_STDC1" pin="8"/>
     </net>
-    <net code="19" name="OBD_14">
-      <node ref="J_MCP2_L1" pin="1"/>
-      <node ref="J_CAN1_L1" pin="1"/>
-      <node ref="J_MCP1_L1" pin="1"/>
-      <node ref="J_OBD1" pin="14"/>
-      <node ref="J_CAN3_L1" pin="1"/>
-      <node ref="J_CAN2_L1" pin="1"/>
+    <net code="13" name="SWCLK">
+      <node ref="U1" pin="49"/>
+      <node ref="J_STDC1" pin="6"/>
     </net>
-    <net code="20" name="Net-(J_CAN3_120-Pad2)">
-      <node ref="R_CAN3" pin="2"/>
-      <node ref="J_CAN3_120" pin="2"/>
+    <net code="14" name="SWDIO">
+      <node ref="J_STDC1" pin="4"/>
+      <node ref="U1" pin="46"/>
     </net>
-    <net code="21" name="Net-(U1-Pad54)">
+    <net code="15" name="Net-(U1-Pad25)">
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad54)">
       <node ref="U1" pin="54"/>
     </net>
-    <net code="22" name="Net-(U1-Pad25)">
-      <node ref="U1" pin="25"/>
+    <net code="17" name="OBD_12">
+      <node ref="J_CAN2_H1" pin="5"/>
+      <node ref="J_MCP1_H1" pin="5"/>
+      <node ref="J_MCP2_H1" pin="5"/>
+      <node ref="J_CAN1_H1" pin="5"/>
+      <node ref="J_OBD1" pin="12"/>
+      <node ref="J_CAN3_H1" pin="5"/>
+    </net>
+    <net code="18" name="OBD_3">
+      <node ref="J_CAN1_H1" pin="3"/>
+      <node ref="J_MCP2_H1" pin="3"/>
+      <node ref="J_CAN2_H1" pin="3"/>
+      <node ref="J_MCP1_H1" pin="3"/>
+      <node ref="J_OBD1" pin="3"/>
+      <node ref="J_CAN3_H1" pin="3"/>
+    </net>
+    <net code="19" name="OBD_6">
+      <node ref="J_CAN1_H1" pin="1"/>
+      <node ref="J_MCP2_H1" pin="1"/>
+      <node ref="J_CAN3_H1" pin="1"/>
+      <node ref="J_OBD1" pin="6"/>
+      <node ref="J_MCP1_H1" pin="1"/>
+      <node ref="J_CAN2_H1" pin="1"/>
+    </net>
+    <net code="20" name="+5V">
+      <node ref="J_VSS_SENSOR1" pin="1"/>
+      <node ref="U_TJA1040_2" pin="3"/>
+      <node ref="U6002" pin="8"/>
+      <node ref="U_UA78M33Q1" pin="1"/>
+      <node ref="U_NCV7805" pin="3"/>
+      <node ref="C_VIN33_1" pin="1"/>
+      <node ref="L298P_DRIVER2" pin="12"/>
+      <node ref="C_L298_5V1" pin="1"/>
+      <node ref="U_TJA1040_1" pin="3"/>
+      <node ref="L298P_DRIVER1" pin="12"/>
+      <node ref="C_VOUT1" pin="1"/>
+      <node ref="C_MCP1" pin="1"/>
+      <node ref="C_L298_5V2" pin="1"/>
+      <node ref="J_INOUT2" pin="2"/>
+      <node ref="C_6002" pin="1"/>
+      <node ref="C_MCP2" pin="1"/>
+    </net>
+    <net code="21" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="22" name="Net-(J_INOUT2-Pad6)">
+      <node ref="R_DIV22" pin="2"/>
+      <node ref="J_INOUT2" pin="6"/>
     </net>
     <net code="23" name="Net-(J_INOUT2-Pad5)">
       <node ref="J_INOUT2" pin="5"/>
       <node ref="R_DIV12" pin="2"/>
     </net>
-    <net code="24" name="Net-(U1-Pad2)">
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="25" name="Net-(U1-Pad4)">
-      <node ref="U1" pin="4"/>
-    </net>
-    <net code="26" name="Net-(U1-Pad3)">
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="27" name="SWO">
-      <node ref="U1" pin="55"/>
-      <node ref="J_STDC1" pin="8"/>
-    </net>
-    <net code="28" name="Net-(U1-Pad11)">
-      <node ref="U1" pin="11"/>
-    </net>
-    <net code="29" name="Net-(U1-Pad9)">
-      <node ref="U1" pin="9"/>
-    </net>
-    <net code="30" name="Net-(R_RS_MCP2-Pad1)">
+    <net code="24" name="Net-(R_RS_MCP2-Pad1)">
       <node ref="R_RS_MCP2" pin="1"/>
       <node ref="U_TJA1040_2" pin="8"/>
     </net>
-    <net code="31" name="Net-(C_VCAP2-Pad1)">
+    <net code="25" name="Net-(C_VCAP2-Pad1)">
       <node ref="C_VCAP2" pin="1"/>
       <node ref="U1" pin="47"/>
     </net>
-    <net code="32" name="Net-(C_VCAP1-Pad1)">
-      <node ref="C_VCAP1" pin="1"/>
-      <node ref="U1" pin="31"/>
-    </net>
-    <net code="33" name="Net-(C_IN_6-Pad1)">
+    <net code="26" name="Net-(C_IN_6-Pad1)">
       <node ref="FB_VDDA1" pin="1"/>
-      <node ref="U1" pin="13"/>
       <node ref="C_IN_6" pin="1"/>
       <node ref="C_IN_7" pin="1"/>
+      <node ref="U1" pin="13"/>
     </net>
-    <net code="34" name="Net-(J_INOUT2-Pad6)">
-      <node ref="R_DIV22" pin="2"/>
-      <node ref="J_INOUT2" pin="6"/>
+    <net code="27" name="Net-(C_VCAP1-Pad1)">
+      <node ref="U1" pin="31"/>
+      <node ref="C_VCAP1" pin="1"/>
+    </net>
+    <net code="28" name="CAN3_OUT_H">
+      <node ref="R_CAN3" pin="1"/>
+      <node ref="J_CAN_3" pin="4"/>
+      <node ref="J_CAN3_H1" pin="6"/>
+      <node ref="J_CAN3_H1" pin="4"/>
+      <node ref="J_CAN3_H1" pin="2"/>
+    </net>
+    <net code="29" name="OBD_13">
+      <node ref="J_MCP2_L1" pin="5"/>
+      <node ref="J_MCP1_L1" pin="5"/>
+      <node ref="J_CAN3_L1" pin="5"/>
+      <node ref="J_OBD1" pin="13"/>
+      <node ref="J_CAN2_L1" pin="5"/>
+      <node ref="J_CAN1_L1" pin="5"/>
+    </net>
+    <net code="30" name="OBD_11">
+      <node ref="J_CAN2_L1" pin="3"/>
+      <node ref="J_OBD1" pin="11"/>
+      <node ref="J_MCP1_L1" pin="3"/>
+      <node ref="J_CAN1_L1" pin="3"/>
+      <node ref="J_CAN3_L1" pin="3"/>
+      <node ref="J_MCP2_L1" pin="3"/>
+    </net>
+    <net code="31" name="OBD_14">
+      <node ref="J_OBD1" pin="14"/>
+      <node ref="J_CAN1_L1" pin="1"/>
+      <node ref="J_MCP1_L1" pin="1"/>
+      <node ref="J_CAN3_L1" pin="1"/>
+      <node ref="J_CAN2_L1" pin="1"/>
+      <node ref="J_MCP2_L1" pin="1"/>
+    </net>
+    <net code="32" name="Net-(J_CAN3_120-Pad2)">
+      <node ref="J_CAN3_120" pin="2"/>
+      <node ref="R_CAN3" pin="2"/>
+    </net>
+    <net code="33" name="CAN3_OUT_L">
+      <node ref="J_CAN3_120" pin="1"/>
+      <node ref="J_CAN3_L1" pin="2"/>
+      <node ref="J_CAN3_L1" pin="4"/>
+      <node ref="J_CAN3_L1" pin="6"/>
+      <node ref="J_CAN_3" pin="3"/>
+    </net>
+    <net code="34" name="LED_GREEN">
+      <node ref="U1" pin="9"/>
+      <node ref="D_GREEN1" pin="2"/>
     </net>
     <net code="35" name="Net-(D_GREEN1-Pad1)">
       <node ref="R_D_GR1" pin="2"/>
       <node ref="D_GREEN1" pin="1"/>
     </net>
-    <net code="36" name="CAN3_OUT_L">
-      <node ref="J_CAN3_120" pin="1"/>
-      <node ref="J_CAN3_L1" pin="6"/>
-      <node ref="J_CAN_3" pin="3"/>
-      <node ref="J_CAN3_L1" pin="5"/>
-      <node ref="J_CAN3_L1" pin="4"/>
-    </net>
-    <net code="37" name="L298_2_OUT_3">
-      <node ref="D2_7" pin="1"/>
-      <node ref="L298P_DRIVER2" pin="16"/>
-      <node ref="D2_3" pin="2"/>
-      <node ref="J_ACTUATOR2" pin="3"/>
-    </net>
-    <net code="38" name="L298_2_OUT_1">
+    <net code="36" name="L298_2_OUT_1">
       <node ref="D2_1" pin="2"/>
       <node ref="J_ACTUATOR2" pin="1"/>
-      <node ref="L298P_DRIVER2" pin="4"/>
       <node ref="D2_5" pin="1"/>
+      <node ref="L298P_DRIVER2" pin="4"/>
     </net>
-    <net code="39" name="L298_2_OUT_4">
-      <node ref="D2_8" pin="1"/>
+    <net code="37" name="L298_2_OUT_3">
+      <node ref="D2_3" pin="2"/>
+      <node ref="J_ACTUATOR2" pin="3"/>
+      <node ref="L298P_DRIVER2" pin="16"/>
+      <node ref="D2_7" pin="1"/>
+    </net>
+    <net code="38" name="L298_2_OUT_4">
       <node ref="D2_4" pin="2"/>
-      <node ref="L298P_DRIVER2" pin="17"/>
+      <node ref="D2_8" pin="1"/>
       <node ref="J_ACTUATOR2" pin="4"/>
+      <node ref="L298P_DRIVER2" pin="17"/>
     </net>
-    <net code="40" name="MCP1_H">
-      <node ref="U_TJA1040_1" pin="7"/>
-      <node ref="J_MCP1_H1" pin="5"/>
+    <net code="39" name="MCP1_H">
+      <node ref="J_MCP1_H1" pin="2"/>
       <node ref="J_MCP1_H1" pin="6"/>
+      <node ref="U_TJA1040_1" pin="7"/>
       <node ref="J_MCP1_H1" pin="4"/>
     </net>
-    <net code="41" name="+12V">
-      <node ref="D2" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="C_L298_12V1" pin="1"/>
-      <node ref="J_OBD1" pin="16"/>
-      <node ref="C_VIN1" pin="1"/>
-      <node ref="L298P_DRIVER1" pin="6"/>
-      <node ref="D4" pin="1"/>
-      <node ref="D3" pin="1"/>
-      <node ref="U_NCV7805" pin="1"/>
-      <node ref="L298P_DRIVER2" pin="6"/>
-      <node ref="D2_2" pin="1"/>
-      <node ref="J_OBD1" pin="8"/>
-      <node ref="J_PWR1" pin="1"/>
-      <node ref="C_L298_12V2" pin="1"/>
-      <node ref="D2_1" pin="1"/>
-      <node ref="J_CAN_3" pin="1"/>
-      <node ref="J_CAN_1" pin="1"/>
-      <node ref="D2_3" pin="1"/>
-      <node ref="D2_4" pin="1"/>
-      <node ref="J_CAN_2" pin="1"/>
+    <net code="40" name="Net-(R_6002_1-Pad2)">
+      <node ref="U6002" pin="6"/>
+      <node ref="R_6002_1" pin="2"/>
+      <node ref="R_6002_2" pin="1"/>
     </net>
-    <net code="42" name="L298_2_OUT_2">
-      <node ref="D2_6" pin="1"/>
-      <node ref="J_ACTUATOR2" pin="2"/>
-      <node ref="D2_2" pin="2"/>
-      <node ref="L298P_DRIVER2" pin="5"/>
+    <net code="41" name="MCP1_L">
+      <node ref="U_TJA1040_1" pin="6"/>
+      <node ref="J_MCP1_L1" pin="6"/>
+      <node ref="J_MCP1_L1" pin="4"/>
+      <node ref="J_MCP1_L1" pin="2"/>
     </net>
-    <net code="43" name="Net-(R_6002_5-Pad2)">
+    <net code="42" name="CAN2_RX">
+      <node ref="U1" pin="57"/>
+      <node ref="U_TJA1040_2" pin="4"/>
+    </net>
+    <net code="43" name="CAN2_TX">
+      <node ref="U_TJA1040_2" pin="1"/>
+      <node ref="U1" pin="58"/>
+    </net>
+    <net code="44" name="Net-(U_TJA1040_1-Pad5)">
+      <node ref="U_TJA1040_1" pin="5"/>
+    </net>
+    <net code="45" name="Net-(U_TJA1040_2-Pad5)">
+      <node ref="U_TJA1040_2" pin="5"/>
+    </net>
+    <net code="46" name="Net-(R_6002_5-Pad2)">
       <node ref="U6002" pin="2"/>
       <node ref="R_6002_6" pin="1"/>
       <node ref="R_6002_5" pin="2"/>
     </net>
-    <net code="44" name="Net-(U_TJA1040_2-Pad5)">
-      <node ref="U_TJA1040_2" pin="5"/>
-    </net>
-    <net code="45" name="MCP2_H">
+    <net code="47" name="MCP2_H">
+      <node ref="J_MCP2_H1" pin="2"/>
       <node ref="U_TJA1040_2" pin="7"/>
-      <node ref="J_MCP2_H1" pin="6"/>
-      <node ref="J_MCP2_H1" pin="5"/>
       <node ref="J_MCP2_H1" pin="4"/>
+      <node ref="J_MCP2_H1" pin="6"/>
     </net>
-    <net code="46" name="MCP2_L">
-      <node ref="J_MCP2_L1" pin="5"/>
-      <node ref="J_MCP2_L1" pin="4"/>
+    <net code="48" name="MCP2_L">
       <node ref="U_TJA1040_2" pin="6"/>
       <node ref="J_MCP2_L1" pin="6"/>
+      <node ref="J_MCP2_L1" pin="4"/>
+      <node ref="J_MCP2_L1" pin="2"/>
     </net>
-    <net code="47" name="Net-(U_TJA1040_1-Pad5)">
-      <node ref="U_TJA1040_1" pin="5"/>
+    <net code="49" name="L298_2_OUT_2">
+      <node ref="D2_2" pin="2"/>
+      <node ref="D2_6" pin="1"/>
+      <node ref="L298P_DRIVER2" pin="5"/>
+      <node ref="J_ACTUATOR2" pin="2"/>
     </net>
-    <net code="48" name="MCP1_L">
-      <node ref="J_MCP1_L1" pin="6"/>
-      <node ref="J_MCP1_L1" pin="5"/>
-      <node ref="J_MCP1_L1" pin="4"/>
-      <node ref="U_TJA1040_1" pin="6"/>
+    <net code="50" name="+12V">
+      <node ref="J_OBD1" pin="16"/>
+      <node ref="C_VIN1" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C_L298_12V2" pin="1"/>
+      <node ref="J_PWR1" pin="2"/>
+      <node ref="J_CAN_2" pin="1"/>
+      <node ref="L298P_DRIVER2" pin="6"/>
+      <node ref="J_CAN_3" pin="1"/>
+      <node ref="J_CAN_1" pin="1"/>
+      <node ref="U_NCV7805" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D2_1" pin="1"/>
+      <node ref="L298P_DRIVER1" pin="6"/>
+      <node ref="J_OBD1" pin="8"/>
+      <node ref="D2_2" pin="1"/>
+      <node ref="D2_3" pin="1"/>
+      <node ref="D2_4" pin="1"/>
+      <node ref="C_L298_12V1" pin="1"/>
     </net>
-    <net code="49" name="L298P_2_IN3">
-      <node ref="U1" pin="62"/>
-      <node ref="L298P_DRIVER2" pin="13"/>
-    </net>
-    <net code="50" name="Net-(L298P_DRIVER2-Pad18)">
-      <node ref="L298P_DRIVER2" pin="18"/>
-    </net>
-    <net code="51" name="L298P_2_IN1">
-      <node ref="L298P_DRIVER2" pin="7"/>
-      <node ref="U1" pin="50"/>
-    </net>
-    <net code="52" name="L298P_2_IN2">
+    <net code="51" name="L298P_2_IN2">
       <node ref="L298P_DRIVER2" pin="9"/>
       <node ref="U1" pin="27"/>
     </net>
-    <net code="53" name="L298P_2_ENA">
-      <node ref="U1" pin="22"/>
+    <net code="52" name="L298P_2_ENA">
       <node ref="L298P_DRIVER2" pin="8"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="53" name="L298P_2_IN1">
+      <node ref="L298P_DRIVER2" pin="7"/>
+      <node ref="U1" pin="50"/>
     </net>
     <net code="54" name="Net-(L298P_DRIVER2-Pad3)">
       <node ref="L298P_DRIVER2" pin="3"/>
     </net>
-    <net code="55" name="Net-(R_6002_1-Pad2)">
-      <node ref="U6002" pin="6"/>
-      <node ref="R_6002_2" pin="1"/>
-      <node ref="R_6002_1" pin="2"/>
+    <net code="55" name="Net-(L298P_DRIVER2-Pad18)">
+      <node ref="L298P_DRIVER2" pin="18"/>
     </net>
-    <net code="56" name="Net-(J_OBD1-Pad9)">
+    <net code="56" name="L298P_2_IN4">
+      <node ref="L298P_DRIVER2" pin="15"/>
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="57" name="L298P_2_ENB">
+      <node ref="U1" pin="41"/>
+      <node ref="L298P_DRIVER2" pin="14"/>
+    </net>
+    <net code="58" name="L298P_2_IN3">
+      <node ref="L298P_DRIVER2" pin="13"/>
+      <node ref="U1" pin="62"/>
+    </net>
+    <net code="59" name="Net-(J_OBD1-Pad9)">
       <node ref="J_OBD1" pin="9"/>
     </net>
-    <net code="57" name="Net-(J_OBD1-Pad7)">
+    <net code="60" name="Net-(J_OBD1-Pad7)">
       <node ref="J_OBD1" pin="7"/>
     </net>
-    <net code="58" name="Net-(J_OBD1-Pad5)">
+    <net code="61" name="Net-(J_OBD1-Pad5)">
       <node ref="J_OBD1" pin="5"/>
     </net>
-    <net code="59" name="Net-(D_RED1-Pad1)">
+    <net code="62" name="CAN1_OUT_L">
+      <node ref="J_CAN_1" pin="3"/>
+      <node ref="J_CAN1_L1" pin="6"/>
+      <node ref="J_CAN1_L1" pin="2"/>
+      <node ref="J_CAN1_120" pin="1"/>
+      <node ref="J_CAN1_L1" pin="4"/>
+    </net>
+    <net code="63" name="CAN2_OUT_L">
+      <node ref="J_CAN2_L1" pin="4"/>
+      <node ref="J_CAN_2" pin="3"/>
+      <node ref="J_CAN2_L1" pin="2"/>
+      <node ref="J_CAN2_L1" pin="6"/>
+      <node ref="J_CAN2_120" pin="1"/>
+    </net>
+    <net code="64" name="CAN1_OUT_H">
+      <node ref="J_CAN1_H1" pin="4"/>
+      <node ref="J_CAN1_H1" pin="6"/>
+      <node ref="J_CAN_1" pin="4"/>
+      <node ref="J_CAN1_H1" pin="2"/>
+      <node ref="R_CAN1" pin="1"/>
+    </net>
+    <net code="65" name="CAN2_OUT_H">
+      <node ref="J_CAN_2" pin="4"/>
+      <node ref="R_CAN2" pin="1"/>
+      <node ref="J_CAN2_H1" pin="6"/>
+      <node ref="J_CAN2_H1" pin="2"/>
+      <node ref="J_CAN2_H1" pin="4"/>
+    </net>
+    <net code="66" name="Net-(D_RED1-Pad1)">
       <node ref="D_RED1" pin="1"/>
       <node ref="R_D_RED1" pin="2"/>
     </net>
-    <net code="60" name="CAN1_OUT_H">
-      <node ref="R_CAN1" pin="1"/>
-      <node ref="J_CAN1_H1" pin="4"/>
-      <node ref="J_CAN1_H1" pin="6"/>
-      <node ref="J_CAN1_H1" pin="5"/>
-      <node ref="J_CAN_1" pin="4"/>
-    </net>
-    <net code="61" name="CAN1_OUT_L">
-      <node ref="J_CAN_1" pin="3"/>
-      <node ref="J_CAN1_L1" pin="4"/>
-      <node ref="J_CAN1_L1" pin="5"/>
-      <node ref="J_CAN1_L1" pin="6"/>
-      <node ref="J_CAN1_120" pin="1"/>
-    </net>
-    <net code="62" name="CAN2_OUT_L">
-      <node ref="J_CAN_2" pin="3"/>
-      <node ref="J_CAN2_120" pin="1"/>
-      <node ref="J_CAN2_L1" pin="6"/>
-      <node ref="J_CAN2_L1" pin="5"/>
-      <node ref="J_CAN2_L1" pin="4"/>
-    </net>
-    <net code="63" name="Net-(D_BLUE1-Pad1)">
-      <node ref="D_BLUE1" pin="1"/>
-      <node ref="R_D_BL1" pin="2"/>
-    </net>
-    <net code="64" name="Net-(J_OBD1-Pad2)">
-      <node ref="J_OBD1" pin="2"/>
-    </net>
-    <net code="65" name="Net-(R_RS_MCP1-Pad1)">
-      <node ref="R_RS_MCP1" pin="1"/>
-      <node ref="U_TJA1040_1" pin="8"/>
-    </net>
-    <net code="66" name="Net-(L298P_DRIVER1-Pad3)">
-      <node ref="L298P_DRIVER1" pin="3"/>
-    </net>
-    <net code="67" name="L298_OUT_1">
-      <node ref="D5" pin="1"/>
-      <node ref="D1" pin="2"/>
-      <node ref="J_ACTUATOR1" pin="1"/>
-      <node ref="L298P_DRIVER1" pin="4"/>
-    </net>
-    <net code="68" name="Net-(L298P_DRIVER1-Pad18)">
-      <node ref="L298P_DRIVER1" pin="18"/>
-    </net>
-    <net code="69" name="L298_OUT_4">
-      <node ref="J_ACTUATOR1" pin="4"/>
-      <node ref="D4" pin="2"/>
-      <node ref="D8" pin="1"/>
-      <node ref="L298P_DRIVER1" pin="17"/>
-    </net>
-    <net code="70" name="L298_OUT_3">
-      <node ref="J_ACTUATOR1" pin="3"/>
-      <node ref="D7" pin="1"/>
-      <node ref="D3" pin="2"/>
-      <node ref="L298P_DRIVER1" pin="16"/>
-    </net>
-    <net code="71" name="L298_OUT_2">
-      <node ref="J_ACTUATOR1" pin="2"/>
-      <node ref="L298P_DRIVER1" pin="5"/>
-      <node ref="D2" pin="2"/>
-      <node ref="D6" pin="1"/>
-    </net>
-    <net code="72" name="Net-(J_OBD1-Pad15)">
-      <node ref="J_OBD1" pin="15"/>
-    </net>
-    <net code="73" name="Net-(J_OBD1-Pad10)">
-      <node ref="J_OBD1" pin="10"/>
-    </net>
-    <net code="74" name="Net-(J_OBD1-Pad1)">
-      <node ref="J_OBD1" pin="1"/>
-    </net>
-    <net code="75" name="PA_7_ADC12_IN7">
-      <node ref="U1" pin="23"/>
-      <node ref="R_AC_POTI1" pin="2"/>
-      <node ref="J_ACTUATOR1" pin="6"/>
-    </net>
-    <net code="76" name="Net-(J_CAN2_120-Pad2)">
-      <node ref="R_CAN2" pin="2"/>
-      <node ref="J_CAN2_120" pin="2"/>
-    </net>
-    <net code="77" name="CAN2_OUT_H">
-      <node ref="R_CAN2" pin="1"/>
-      <node ref="J_CAN2_H1" pin="6"/>
-      <node ref="J_CAN2_H1" pin="5"/>
-      <node ref="J_CAN2_H1" pin="4"/>
-      <node ref="J_CAN_2" pin="4"/>
-    </net>
-    <net code="78" name="DAC_PIN1">
-      <node ref="U1" pin="20"/>
-      <node ref="U6002" pin="3"/>
-      <node ref="R_6002_4" pin="2"/>
-    </net>
-    <net code="79" name="PA_3">
-      <node ref="J_INOUT1" pin="4"/>
-      <node ref="U1" pin="17"/>
-    </net>
-    <net code="80" name="PA_2">
-      <node ref="J_INOUT1" pin="3"/>
-      <node ref="U1" pin="16"/>
-    </net>
-    <net code="81" name="CAN1_TX">
-      <node ref="R_D_GR1" pin="1"/>
-      <node ref="U1" pin="45"/>
-      <node ref="U_TJA1040_1" pin="1"/>
-    </net>
-    <net code="82" name="CAN1_RX">
-      <node ref="U1" pin="44"/>
-      <node ref="U_TJA1040_1" pin="4"/>
-      <node ref="R_D_BL1" pin="1"/>
-    </net>
-    <net code="83" name="PA_1">
-      <node ref="J_INOUT1" pin="2"/>
-      <node ref="U1" pin="15"/>
-    </net>
-    <net code="84" name="PA_0">
-      <node ref="J_INOUT1" pin="1"/>
-      <node ref="U1" pin="14"/>
-    </net>
-    <net code="85" name="BOOT0">
-      <node ref="R_BOOT_0" pin="2"/>
+    <net code="67" name="BOOT0">
       <node ref="U1" pin="60"/>
       <node ref="SW_BOOT1" pin="2"/>
+      <node ref="R_BOOT_0" pin="2"/>
     </net>
-    <net code="86" name="Net-(J_CAN1_120-Pad2)">
-      <node ref="J_CAN1_120" pin="2"/>
-      <node ref="R_CAN1" pin="2"/>
-    </net>
-    <net code="87" name="DAC_PIN2">
-      <node ref="U6002" pin="5"/>
-      <node ref="R_6002_3" pin="2"/>
-      <node ref="U1" pin="21"/>
-    </net>
-    <net code="88" name="OSCOUT">
-      <node ref="U1" pin="6"/>
-      <node ref="C_HSE_O1" pin="1"/>
-      <node ref="Y_8MHZ1" pin="2"/>
-    </net>
-    <net code="89" name="OSCIN">
-      <node ref="C_HSE_I1" pin="1"/>
-      <node ref="Y_8MHZ1" pin="1"/>
-      <node ref="U1" pin="5"/>
-    </net>
-    <net code="90" name="L298P_IN4">
-      <node ref="L298P_DRIVER1" pin="15"/>
-      <node ref="U1" pin="40"/>
-    </net>
-    <net code="91" name="L298P_ENB">
-      <node ref="L298P_DRIVER1" pin="14"/>
-      <node ref="U1" pin="38"/>
-    </net>
-    <net code="92" name="USART3_RX">
-      <node ref="U1" pin="30"/>
-      <node ref="J_SERIAL_3" pin="1"/>
-    </net>
-    <net code="93" name="CAN2_RX">
-      <node ref="U_TJA1040_2" pin="4"/>
-      <node ref="U1" pin="57"/>
-    </net>
-    <net code="94" name="PB_4">
-      <node ref="J_VSS_SENSOR1" pin="3"/>
-      <node ref="U1" pin="56"/>
-    </net>
-    <net code="95" name="BOOT1">
+    <net code="68" name="BOOT1">
       <node ref="U1" pin="28"/>
       <node ref="R_BOOT_1" pin="2"/>
     </net>
-    <net code="96" name="L298P_2_IN4">
-      <node ref="U1" pin="36"/>
-      <node ref="L298P_DRIVER2" pin="15"/>
+    <net code="69" name="Net-(D_BLUE1-Pad1)">
+      <node ref="R_D_BL1" pin="2"/>
+      <node ref="D_BLUE1" pin="1"/>
     </net>
-    <net code="97" name="PB_14">
-      <node ref="U1" pin="35"/>
-      <node ref="J_INOUT1" pin="7"/>
+    <net code="70" name="Net-(R_RS_MCP1-Pad1)">
+      <node ref="R_RS_MCP1" pin="1"/>
+      <node ref="U_TJA1040_1" pin="8"/>
     </net>
-    <net code="98" name="PB_13">
-      <node ref="U1" pin="34"/>
-      <node ref="J_INOUT1" pin="6"/>
+    <net code="71" name="Net-(L298P_DRIVER1-Pad3)">
+      <node ref="L298P_DRIVER1" pin="3"/>
     </net>
-    <net code="99" name="PB_12">
-      <node ref="J_INOUT1" pin="5"/>
-      <node ref="U1" pin="33"/>
+    <net code="72" name="L298_OUT_1">
+      <node ref="D1" pin="2"/>
+      <node ref="D5" pin="1"/>
+      <node ref="J_ACTUATOR1" pin="1"/>
+      <node ref="L298P_DRIVER1" pin="4"/>
     </net>
-    <net code="100" name="CAN2_TX">
-      <node ref="U_TJA1040_2" pin="1"/>
-      <node ref="U1" pin="58"/>
+    <net code="73" name="Net-(L298P_DRIVER1-Pad18)">
+      <node ref="L298P_DRIVER1" pin="18"/>
     </net>
-    <net code="101" name="USART3_TX">
+    <net code="74" name="L298_OUT_4">
+      <node ref="J_ACTUATOR1" pin="4"/>
+      <node ref="L298P_DRIVER1" pin="17"/>
+      <node ref="D4" pin="2"/>
+      <node ref="D8" pin="1"/>
+    </net>
+    <net code="75" name="L298_OUT_3">
+      <node ref="D7" pin="1"/>
+      <node ref="L298P_DRIVER1" pin="16"/>
+      <node ref="J_ACTUATOR1" pin="3"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="76" name="L298_OUT_2">
+      <node ref="D2" pin="2"/>
+      <node ref="L298P_DRIVER1" pin="5"/>
+      <node ref="D6" pin="1"/>
+      <node ref="J_ACTUATOR1" pin="2"/>
+    </net>
+    <net code="77" name="Net-(J_OBD1-Pad1)">
+      <node ref="J_OBD1" pin="1"/>
+    </net>
+    <net code="78" name="Net-(J_OBD1-Pad2)">
+      <node ref="J_OBD1" pin="2"/>
+    </net>
+    <net code="79" name="Net-(J_OBD1-Pad15)">
+      <node ref="J_OBD1" pin="15"/>
+    </net>
+    <net code="80" name="Net-(J_OBD1-Pad10)">
+      <node ref="J_OBD1" pin="10"/>
+    </net>
+    <net code="81" name="PA_1">
+      <node ref="J_INOUT1" pin="2"/>
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="82" name="PA_0">
+      <node ref="J_INOUT1" pin="1"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="83" name="Net-(J_CAN2_120-Pad2)">
+      <node ref="R_CAN2" pin="2"/>
+      <node ref="J_CAN2_120" pin="2"/>
+    </net>
+    <net code="84" name="DAC_PIN1">
+      <node ref="U1" pin="20"/>
+      <node ref="R_6002_4" pin="2"/>
+      <node ref="U6002" pin="3"/>
+    </net>
+    <net code="85" name="USART3_TX">
       <node ref="U1" pin="29"/>
       <node ref="J_SERIAL_3" pin="2"/>
     </net>
-    <net code="102" name="PB_0_ADC12_IN8">
-      <node ref="U1" pin="26"/>
-      <node ref="R_AC_POTI2" pin="2"/>
+    <net code="86" name="PB_0_ADC12_IN8">
       <node ref="J_ACTUATOR2" pin="6"/>
+      <node ref="R_AC_POTI2" pin="2"/>
+      <node ref="U1" pin="26"/>
     </net>
-    <net code="103" name="L298P_2_ENB">
-      <node ref="L298P_DRIVER2" pin="14"/>
-      <node ref="U1" pin="41"/>
+    <net code="87" name="PA_7_ADC12_IN7">
+      <node ref="R_AC_POTI1" pin="2"/>
+      <node ref="J_ACTUATOR1" pin="6"/>
+      <node ref="U1" pin="23"/>
     </net>
-    <net code="104" name="L298P_IN1">
-      <node ref="U1" pin="53"/>
-      <node ref="L298P_DRIVER1" pin="7"/>
+    <net code="88" name="DAC_PIN2">
+      <node ref="U1" pin="21"/>
+      <node ref="R_6002_3" pin="2"/>
+      <node ref="U6002" pin="5"/>
     </net>
-    <net code="105" name="L298P_ENA">
-      <node ref="L298P_DRIVER1" pin="8"/>
-      <node ref="U1" pin="37"/>
+    <net code="89" name="PA_3">
+      <node ref="J_INOUT1" pin="4"/>
+      <node ref="U1" pin="17"/>
     </net>
-    <net code="106" name="ADC12_IN14">
-      <node ref="R_DIV22" pin="1"/>
-      <node ref="R_DIV21" pin="1"/>
-      <node ref="U1" pin="24"/>
+    <net code="90" name="PA_2">
+      <node ref="J_INOUT1" pin="3"/>
+      <node ref="U1" pin="16"/>
     </net>
-    <net code="107" name="ADC123_IN12">
-      <node ref="U1" pin="10"/>
-      <node ref="J_INOUT2" pin="4"/>
+    <net code="91" name="CAN1_TX">
+      <node ref="U1" pin="45"/>
+      <node ref="U_TJA1040_1" pin="1"/>
     </net>
-    <net code="108" name="L298P_IN2">
+    <net code="92" name="CAN1_RX">
+      <node ref="U_TJA1040_1" pin="4"/>
+      <node ref="U1" pin="44"/>
+    </net>
+    <net code="93" name="Net-(J_CAN1_120-Pad2)">
+      <node ref="J_CAN1_120" pin="2"/>
+      <node ref="R_CAN1" pin="2"/>
+    </net>
+    <net code="94" name="USART3_RX">
+      <node ref="J_SERIAL_3" pin="1"/>
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="95" name="L298P_IN2">
       <node ref="L298P_DRIVER1" pin="9"/>
       <node ref="U1" pin="52"/>
     </net>
-    <net code="109" name="L298P_IN3">
+    <net code="96" name="L298P_IN3">
       <node ref="U1" pin="51"/>
       <node ref="L298P_DRIVER1" pin="13"/>
     </net>
-    <net code="110" name="ADC123_IN10">
+    <net code="97" name="ADC123_IN10">
       <node ref="U1" pin="8"/>
-      <node ref="R_DIV12" pin="1"/>
       <node ref="R_DIV11" pin="1"/>
+      <node ref="R_DIV12" pin="1"/>
+    </net>
+    <net code="98" name="L298P_IN1">
+      <node ref="L298P_DRIVER1" pin="7"/>
+      <node ref="U1" pin="53"/>
+    </net>
+    <net code="99" name="PB_4">
+      <node ref="U1" pin="56"/>
+      <node ref="J_VSS_SENSOR1" pin="3"/>
+    </net>
+    <net code="100" name="PB_14">
+      <node ref="J_INOUT1" pin="7"/>
+      <node ref="U1" pin="35"/>
+    </net>
+    <net code="101" name="PB_13">
+      <node ref="J_INOUT1" pin="6"/>
+      <node ref="U1" pin="34"/>
+    </net>
+    <net code="102" name="PB_12">
+      <node ref="U1" pin="33"/>
+      <node ref="J_INOUT1" pin="5"/>
+    </net>
+    <net code="103" name="L298P_ENA">
+      <node ref="L298P_DRIVER1" pin="8"/>
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="104" name="OSCOUT">
+      <node ref="Y_8MHZ1" pin="2"/>
+      <node ref="U1" pin="6"/>
+      <node ref="C_HSE_O1" pin="1"/>
+    </net>
+    <net code="105" name="OSCIN">
+      <node ref="Y_8MHZ1" pin="1"/>
+      <node ref="C_HSE_I1" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="106" name="L298P_IN4">
+      <node ref="L298P_DRIVER1" pin="15"/>
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="107" name="L298P_ENB">
+      <node ref="L298P_DRIVER1" pin="14"/>
+      <node ref="U1" pin="38"/>
+    </net>
+    <net code="108" name="ADC12_IN14">
+      <node ref="R_DIV21" pin="1"/>
+      <node ref="R_DIV22" pin="1"/>
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="109" name="LED_BLUE">
+      <node ref="D_BLUE1" pin="2"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="110" name="ADC123_IN12">
+      <node ref="J_INOUT2" pin="4"/>
+      <node ref="U1" pin="10"/>
     </net>
     <net code="111" name="I2C1_SDA">
-      <node ref="J_I2C_DISP1" pin="4"/>
       <node ref="U1" pin="59"/>
+      <node ref="J_I2C_DISP1" pin="4"/>
     </net>
-    <net code="112" name="I2C1_SCL">
-      <node ref="U1" pin="61"/>
-      <node ref="J_I2C_DISP1" pin="3"/>
+    <net code="112" name="DAC_OUT2">
+      <node ref="R_6002_2" pin="2"/>
+      <node ref="J_INOUT2" pin="8"/>
+      <node ref="U6002" pin="7"/>
     </net>
-    <net code="113" name="TIM3_CH3_PWM">
+    <net code="113" name="DAC_OUT1">
+      <node ref="U6002" pin="1"/>
+      <node ref="R_6002_6" pin="2"/>
+      <node ref="J_INOUT2" pin="7"/>
+    </net>
+    <net code="114" name="TIM3_CH3_PWM">
       <node ref="U1" pin="39"/>
       <node ref="J_INOUT2" pin="1"/>
     </net>
-    <net code="114" name="DAC_OUT2">
-      <node ref="J_INOUT2" pin="8"/>
-      <node ref="R_6002_2" pin="2"/>
-      <node ref="U6002" pin="7"/>
-    </net>
-    <net code="115" name="DAC_OUT1">
-      <node ref="R_6002_6" pin="2"/>
-      <node ref="U6002" pin="1"/>
-      <node ref="J_INOUT2" pin="7"/>
+    <net code="115" name="I2C1_SCL">
+      <node ref="J_I2C_DISP1" pin="3"/>
+      <node ref="U1" pin="61"/>
     </net>
   </nets>
 </export>
