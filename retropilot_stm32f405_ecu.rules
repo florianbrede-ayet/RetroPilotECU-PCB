@@ -1,0 +1,129 @@
+
+(rules PCB retropilot_stm32f405_ecu
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 26)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule In2.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_1000:800_um"
+    (shape
+      (circle F.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_1000:800_um" "Via[0-3]_1000:800_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_1000:800_um-kicad_default" "Via[0-3]_1000:800_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND +5V +3V3 +12V OSCIN OSCOUT "Net-(C_IN_6-Pad1)" NRST
+    "Net-(C_VCAP1-Pad1)" "Net-(C_VCAP2-Pad1)" "MCP1_H" "MCP1_L" "CAN1_RX" "CAN1_TX" "MCP2_H" "MCP2_L"
+    "CAN2_RX" "CAN2_TX" "L298_OUT_1" "L298_OUT_2" "L298_OUT_3" "L298_OUT_4" "Net-(D_BLUE1-Pad1)" "Net-(D_GREEN1-Pad1)"
+    "Net-(D_RED1-Pad1)" "Net-(J_CAN1_120-Pad2)" "CAN1_OUT_L" "CAN1_OUT_H" "OBD_12" "OBD_3" "OBD_6" "OBD_13"
+    "OBD_11" "OBD_14" "Net-(J_CAN2_120-Pad2)" "CAN2_OUT_L" "CAN2_OUT_H" "Net-(J_CAN3_120-Pad2)" "CAN3_OUT_L" "CAN3_OUT_H"
+    "I2C1_SDA" "I2C1_SCL" "PB_14" "PB_13" "PB_12" "PA_3" "PA_2" "PA_1"
+    "PA_0" "DAC_OUT2" "DAC_OUT1" "Net-(J_INOUT2-Pad6)" "Net-(J_INOUT2-Pad5)" "Net-(J_OBD1-Pad15)" "Net-(J_OBD1-Pad10)" "Net-(J_OBD1-Pad9)"
+    "Net-(J_OBD1-Pad7)" "Net-(J_OBD1-Pad5)" "Net-(J_OBD1-Pad2)" "Net-(J_OBD1-Pad1)" "USART3_TX" "USART3_RX" "TX_STDC14" "RX_STDC14"
+    "Net-(J_STDC1-Pad10)" "Net-(J_STDC1-Pad9)" SWO SWCLK SWDIO "Net-(J_STDC1-Pad2)" "Net-(J_STDC1-Pad1)" "Net-(L298P_DRIVER1-Pad18)"
+    "L298P_IN4" "L298P_ENB" "L298P_IN3" "L298P_IN2" "L298P_ENA" "L298P_IN1" "Net-(L298P_DRIVER1-Pad3)" BOOT0
+    BOOT1 "ADC123_IN10" "ADC12_IN14" "Net-(U1-Pad54)" "Net-(U1-Pad25)" "Net-(U1-Pad4)" "Net-(U1-Pad3)" "PA_7_ADC12_IN7"
+    "ADC123_IN12" "TIM3_CH3_PWM" "PB_4" "Net-(U1-Pad2)" "Net-(R_6002_1-Pad2)" "DAC_PIN2" "DAC_PIN1" "Net-(R_6002_5-Pad2)"
+    "Net-(R_RS_MCP1-Pad1)" "Net-(R_RS_MCP2-Pad1)" "Net-(U_TJA1040_1-Pad5)" "Net-(U_TJA1040_2-Pad5)" "L298_2_OUT_1" "L298_2_OUT_2" "L298_2_OUT_3" "L298_2_OUT_4"
+    "PB_0_ADC12_IN8" "Net-(L298P_DRIVER2-Pad18)" "L298P_2_IN4" "L298P_2_ENB" "L298P_2_IN3" "L298P_2_IN2" "L298P_2_ENA" "L298P_2_IN1"
+    "Net-(L298P_DRIVER2-Pad3)" "LED_BLUE" "LED_GREEN"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
